@@ -1,0 +1,531 @@
+/* Styles for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-left {
+    display: flex;
+    height: auto;
+    width: 80px;
+}
+
+.nav-left i {
+    font-size: 30px;
+    color: #0508be;
+    margin-right: 15px;
+}
+
+.nav-left span {
+    font-size: 25px;
+    color: #000000;
+    padding: 3px 5px;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav-center {
+    display: flex;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #0508be;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-button {
+    color: white;
+    background-color: #0508be;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-button:hover {
+    background-color: #0f7b22;
+}
+
+.header {
+    background-color: rgb(255, 234, 0);
+    margin-top: 20px;
+    height: 30px;
+}
+
+.header p {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+.contains {
+    display: flex;
+    justify-content: flex-start;
+    padding: 200px;
+    background-color: #f9f9f9;
+}
+
+.left {
+    max-width: 400px;
+    padding-left: 150px;
+}
+
+.left .cl1 {
+    font-size: 20px;
+    color: orangered;
+    font-weight: 200;
+}
+
+.left .cl2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.left .button {
+    display: inline-block;
+    color: #000000;
+    background-color: rgb(255, 234, 0);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.left i {
+    font-size: 24px;
+    /* Adjust icon size */
+    color: #0508be;
+    /* Icon color */
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+.left span {
+    font-size: 18px;
+    /* Adjust font size */
+    color: #000;
+    /* Text color */
+    display: inline-block;
+    /* Keep the text inline with the icon */
+    vertical-align: middle;
+    /* Align text vertically with the icon */
+}
+
+.left .fa-play {
+    vertical-align: middle;
+    /* Ensure icon aligns with text */
+}
+
+.right {
+    padding-left: 250px;
+    display: grid;
+    grid-template-columns: repeat(2,
+            1fr);
+    /* Crée deux colonnes de largeur égale */
+    gap: 70px 70px;
+    /* Premier paramètre pour les colonnes, second pour les lignes */
+    justify-content: flex-end;
+    /* Aligner les images à droite */
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.right .fig1 {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.right .fig2 {
+    border-radius: 5px;
+}
+
+.right .fig3 {
+    border-radius: 5px;
+}
+
+.right .fig4 {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.dashboard {
+    height: 80px;
+    background-color: #0508be;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #0508be;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.dashboard>div {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.dashboard p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dashboard p:last-child {
+    font-size: 16px;
+    color: #f9f9f9;
+}
+
+.before-card {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    font-size: 20px;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.before-card p:first-child {
+    color: orangered;
+}
+
+.before-card p:last-child {
+    font-weight: bold;
+    font-size: 30px;
+    width: 500px;
+    padding-left: 320px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.card {
+    width: 250px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon i {
+    font-size: 24px;
+    color: #0508be;
+}
+
+.content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.normal-text {
+    font-weight: normal;
+    color: #666;
+    font-size: 16px;
+}
+
+.after-card {
+    background-color: #f4f2f2;
+    /* Optionnel pour le fond */
+    display: flex;
+    justify-content: center;
+    /* Centre le contenu horizontalement */
+    width: calc(80% - 50px);
+    /* Aligner la largeur avec d'autres sections */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 50px;
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.after-card .after-left,
+.after-card .after-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.after-card .after-left {
+    padding-right: 30px;
+    /* Espacement entre l'image et le texte */
+}
+
+.after-card .after-left img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+    align-self: flex-start;
+    /* Alignement de l'image à gauche */
+}
+
+.after-card .after-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Espace entre les paragraphes */
+}
+
+.after-card .after-right p {
+    margin-bottom: 15px;
+}
+
+.after-card .cl1 {
+    font-size: 20px;
+    color: orangered;
+}
+
+.after-card .cl2 {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+    width: 400px;
+}
+
+.after-card .cl3 {
+    font-size: 16px;
+    margin-top: 15px;
+    width: 500px;
+}
+
+.after-card .button {
+    display: inline-block;
+    color: #000000;
+    background-color: rgb(255, 234, 0);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100px;
+}
+
+.subject-part {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    font-size: 20px;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.subject-part p:first-child {
+    color: orangered;
+}
+
+.subject-part p:last-child {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subject-part {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.subject-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer tout le contenu */
+    padding: 20px 0;
+    /* Espacement vertical */
+}
+
+.titre {
+    text-align: center;
+    margin-bottom: 30px;
+    /* Espacement sous le titre */
+}
+
+.title-main {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    /* Couleur du texte */
+    margin-bottom: 10px;
+}
+
+.title-sub {
+    font-size: 16px;
+    color: #555;
+    /* Couleur du texte secondaire */
+}
+
+.subject {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Quatre colonnes */
+    gap: 20px;
+    /* Espacement entre les éléments */
+    width: 80%;
+    /* Largeur de la grille */
+    max-width: 1200px;
+    /* Largeur maximale */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    /* Bordure autour de chaque élément */
+    border-radius: 10px;
+    /* Bordures arrondies */
+    padding: 15px;
+    flex-direction: row;
+    /* Disposition des icônes et texte en ligne */
+}
+
+.item i {
+    font-size: 24px;
+    /* Taille de l'icône */
+    margin-right: 10px;
+    /* Espacement entre l'icône et le texte */
+}
+
+.item span {
+    font-size: 14px;
+    color: #000;
+    /* Couleur du texte */
+}
+
+/* Couleurs des icônes */
+.engineering-icon {
+    color: #007bff;
+}
+
+/* Exemple : bleu */
+.programming-icon {
+    color: #28a745;
+}
+
+/* Exemple : vert */
+.language-icon {
+    color: #ffc107;
+}
+
+/* Exemple : jaune */
+.science-icon {
+    color: #dc3545;
+}
+
+/* Exemple : rouge */
+.history-icon {
+    color: #17a2b8;
+}
+
+/* Exemple : cyan */
+.psychology-icon {
+    color: #fd7e14;
+}
+
+/* Exemple : orange */
+.web-design-icon {
+    color: #6f42c1;
+}
+
+/* Exemple : violet */
+.see-all-icon {
+    color: #000000;
+}
+
+/* Exemple : noir */
+.profils {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.profils img:nth-child(2) {
+    width: 200px; 
+}
+.profils img:first-child,
+.profils img:last-child {
+    width: 100px; 
+    height: 100px;
+    margin: 0 10px;
+    padding-top: 80px; 
+}
+.details{
+    position: absolute;
+    width: 1134px;
+    height: 77px;
+    left: 20%;
+    top: 3120px;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+.details p:first-child{
+    font-weight: bold;
+    font-size: 20px;
+}
+.details p:last-child{
+    font-size: 15px;
+}
