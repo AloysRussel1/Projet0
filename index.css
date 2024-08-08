@@ -1,0 +1,123 @@
+.contains {
+    width: 100%; /* Occupe toute la largeur de la page */
+    max-width: 100%; /* Assurez-vous que la largeur maximale est également de 100% */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings par défaut */
+    overflow: hidden; /* Empêche les débordements si l'image est plus grande */
+    display: block; /* Assurez-vous que la div est en bloc */
+}
+
+.contains img {
+    width: 100%; /* L'image occupe toute la largeur de la div */
+    height: 500px; /* Conserve les proportions de l'image */
+    display: block; 
+}
+
+.carr-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    max-width: 80%;
+    width: 90%; 
+}
+
+.carr-text p:first-child{
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+}
+.carr-text p:nth-child(2){
+    font-size: 38px;
+    color:#ffffff;
+    font-weight: 800;
+
+}
+.carr-text p:nth-child(3){
+    font-size: 20px;
+    width: 800px;
+    font-weight: bold;
+ }
+.carr-text .button1 {
+    display: inline-block;
+    color: #000000;
+    background-color: orange;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100px;
+}
+
+.carr-text .button2 {
+    display: inline-block;
+    color: #000000;
+    background-color:#ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100px;
+}
+
+.carr-text .button:hover {
+    background-color: #555; 
+}
+
+.titre {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.titre p:first-child{
+    font-size: 30px;
+    font-weight: 600;
+}
+.subject {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    padding-left: 500px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    flex-direction: row;
+}
+.item:hover{
+    background-color:orange;
+    color: #ffffff;
+}
+
+.item i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.item span {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+}
+.programming-icon {
+    color: #095f1d;
+}
+

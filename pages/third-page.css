@@ -402,7 +402,6 @@ input#slide3:checked ~ .slides {
 .titre {
     text-align: center;
     margin-bottom: 30px;
-    /
 }
 .titre p:first-child{
     font-size: 30px;
