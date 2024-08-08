@@ -1,0 +1,63 @@
+/* Style de base pour le body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond légèrement gris clair */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style du header */
+header {
+    background-color: #333; /* Couleur de fond sombre pour le header */
+    color: #fff; /* Couleur du texte */
+    padding: 20px 0; /* Espacement autour du texte */
+}
+
+/* Style de la navigation */
+nav {
+    max-width: 1200px; /* Largeur maximale pour le nav */
+    margin: 0 auto; /* Centrer le nav horizontalement */
+    padding: 0 20px; /* Espacement interne */
+}
+
+/* Style des listes de navigation */
+nav ul {
+    list-style: none; /* Supprimer les puces */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Affichage en ligne pour les éléments de la liste */
+    justify-content: center; /* Centrer les éléments de la liste */
+}
+
+/* Style des éléments de la liste */
+nav ul li {
+    margin: 0 15px; /* Espacement entre les éléments de la liste */
+}
+
+/* Style des liens de navigation */
+nav a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    font-size: 18px; /* Taille de la police */
+    font-weight: bold; /* Gras pour les liens */
+    transition: color 0.3s ease; /* Transition pour un effet de survol */
+}
+
+/* Style pour les liens de navigation au survol */
+nav a:hover {
+    color: #ffa500; /* Couleur orange au survol */
+}
+
+/* Style pour le main */
+main {
+    padding: 20px; /* Espacement autour du contenu principal */
+    background-color: #fff; /* Couleur de fond blanc pour le main */
+}
+
+/* Style pour la div root */
+#root {
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 20px; /* Espacement interne */
+}
