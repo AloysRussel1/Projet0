@@ -15,13 +15,13 @@
 }
 
 .nav-left i {
-    font-size: 40px;
+    font-size: 45px;
     color: #0508be;
     margin-right: 15px;
 }
 
 .nav-left span {
-    font-size: 25px;
+    font-size: 35px;
     color: #000000;
     padding: 3px 5px;
     font-weight: bold;
@@ -37,7 +37,8 @@
     color: #000000;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight:400;
 }
 
 .nav-link:hover {
@@ -48,17 +49,26 @@
 .nav-right {
     display: flex;
 }
+.nav-button1 {
+    color: black;
+    border: solid 5px black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
 
 .nav-button {
     color: white;
     background-color: #0508be;
-    border: none;
-    border-radius: 15px;
+    border: solid 2px;
     padding: 10px 20px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     text-decoration: none;
     font-size: 16px;
+    align-items: center;
 }
 
 .nav-button:hover {
@@ -66,16 +76,16 @@
 }
 
 .header {
-    background-color: rgb(255, 234, 0);
-    margin-top: 20px;
-    height: 30px;
+    background-color: rgb(255, 217, 0);
+    margin-top: 25px;
+    height: 40px;
 }
 
 .header p {
     display: flex;
     justify-content: center;
     color: #000000;
-    padding-top: 5px;
+    padding-top: 10px;
     font-weight: bold;
 }
 
@@ -83,6 +93,7 @@
     display: flex;
     justify-content: flex-start;
     padding: 200px;
+    padding-top:120px ;
     background-color: #f9f9f9;
 }
 
@@ -92,7 +103,7 @@
 }
 
 .left .cl1 {
-    font-size: 20px;
+    font-size: 30px;
     color: orangered;
     font-weight: 200;
 }
@@ -105,7 +116,7 @@
 .left .button {
     display: inline-block;
     color: #000000;
-    background-color: rgb(255, 234, 0);
+    background-color: rgb(255, 217, 0);
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
@@ -116,39 +127,30 @@
 
 .left i {
     font-size: 24px;
-    /* Adjust icon size */
     color: #0508be;
-    /* Icon color */
     margin-right: 10px;
-    /* Space between icon and text */
+    border: solid 1px rgb(75, 75, 244);
+    border-radius: 50%;
+    padding: 8px;
+    background-color:  rgb(160, 160, 215);
 }
-
 .left span {
     font-size: 18px;
-    /* Adjust font size */
     color: #000;
-    /* Text color */
     display: inline-block;
-    /* Keep the text inline with the icon */
     vertical-align: middle;
-    /* Align text vertically with the icon */
 }
 
 .left .fa-play {
     vertical-align: middle;
-    /* Ensure icon aligns with text */
 }
 
 .right {
     padding-left: 250px;
     display: grid;
-    grid-template-columns: repeat(2,
-            1fr);
-    /* Crée deux colonnes de largeur égale */
+    grid-template-columns: repeat(2,1fr);
     gap: 70px 70px;
-    /* Premier paramètre pour les colonnes, second pour les lignes */
     justify-content: flex-end;
-    /* Aligner les images à droite */
 }
 
 .right img {
@@ -161,31 +163,38 @@
 .right .fig1 {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
 .right .fig2 {
     border-radius: 5px;
+    height: 200px;
+    width: 200px;
 }
 
 .right .fig3 {
     border-radius: 5px;
+    height: 200px;
+    width: 200px;
+
+
+    
 }
 
 .right .fig4 {
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
 
-.dashboard {
-    height: 80px;
-    background-color: #0508be;
-}
 
 .dashboard {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100px;
     background-color: #0508be;
     padding: 20px;
     color: #ffffff;
@@ -208,6 +217,20 @@
     font-size: 16px;
     color: #f9f9f9;
 }
+.dashboard .barre{
+    position: relative;
+    padding-left: 10px;
+}
+.dashboard .barre ::before{
+    content: '';
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    bottom: 0;
+    width:2px;
+    height: 60px;
+    background-color: white;
+}
 
 .before-card {
     text-align: center;
@@ -221,6 +244,8 @@
 
 .before-card p:first-child {
     color: orangered;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .before-card p:last-child {
@@ -238,7 +263,7 @@
 
 .card {
     width: 250px;
-    height: 150px;
+    height: 250px;
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 15px;
@@ -253,8 +278,27 @@
 }
 
 .icon i {
-    font-size: 24px;
-    color: #0508be;
+    display: flex;
+    padding: 8px;
+    font-size: 35px;
+    border-radius: 5px;
+    color:white;
+    margin: 5px;
+    text-align: center;
+    line-height: 1;
+}
+.card .icon:nth-child(1){
+    background-color:  #002aff;
+}
+.card .icon:nth-child(2) {
+    background-color: #28a745;
+}
+
+.card .icon:nth-child(3) {
+    background-color: orangered;
+}
+.card .icon:nth-child(4) {
+    background-color: #ffc107;
 }
 
 .content {
@@ -279,17 +323,14 @@
 }
 
 .after-card {
-    background-color: #f4f2f2;
-    /* Optionnel pour le fond */
     display: flex;
     justify-content: center;
-    /* Centre le contenu horizontalement */
     width: calc(80% - 50px);
-    /* Aligner la largeur avec d'autres sections */
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 30px;
     margin-top: 50px;
+    margin-left: 380px;
     transform: scale(1.2);
     transform-origin: center;
 }
@@ -304,23 +345,44 @@
 
 .after-card .after-left {
     padding-right: 30px;
-    /* Espacement entre l'image et le texte */
 }
 
 .after-card .after-left img {
+    position: relative;
     max-width: 100%;
-    height: auto;
-    width: 300px;
-    border-radius: 10px;
     align-self: flex-start;
-    /* Alignement de l'image à gauche */
+
+}
+.image1,.image3{
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+}
+.image2{
+    top: -190px;
+    left: 150px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: solid 2px orangered;
+    top: -150px;
+    
+}
+.image4{
+    top: -190px;
+    left: 150px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
 }
 
 .after-card .after-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Espace entre les paragraphes */
+    margin-bottom:150px;
+    margin-top: 30px;
+    
 }
 
 .after-card .after-right p {
@@ -328,8 +390,9 @@
 }
 
 .after-card .cl1 {
-    font-size: 20px;
+    font-size: 25px;
     color: orangered;
+    font-weight: 400;
 }
 
 .after-card .cl2 {
@@ -369,6 +432,8 @@
 }
 
 .subject-part p:first-child {
+    font-size: 30px;
+    font-weight: 300;
     color: orangered;
 }
 
@@ -389,41 +454,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centrer tout le contenu */
     padding: 20px 0;
-    /* Espacement vertical */
 }
 
 .titre {
     text-align: center;
     margin-bottom: 30px;
-    /* Espacement sous le titre */
 }
 
 .title-main {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    /* Couleur du texte */
     margin-bottom: 10px;
 }
 
 .title-sub {
     font-size: 16px;
     color: #555;
-    /* Couleur du texte secondaire */
 }
 
 .subject {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Quatre colonnes */
     gap: 20px;
-    /* Espacement entre les éléments */
     width: 80%;
-    /* Largeur de la grille */
     max-width: 1200px;
-    /* Largeur maximale */
 }
 
 .item {
@@ -431,72 +487,59 @@
     align-items: center;
     justify-content: center;
     border: 2px solid #000;
-    /* Bordure autour de chaque élément */
     border-radius: 10px;
-    /* Bordures arrondies */
     padding: 15px;
     flex-direction: row;
-    /* Disposition des icônes et texte en ligne */
 }
 
 .item i {
     font-size: 24px;
-    /* Taille de l'icône */
     margin-right: 10px;
-    /* Espacement entre l'icône et le texte */
 }
+
 
 .item span {
     font-size: 14px;
     color: #000;
-    /* Couleur du texte */
 }
 
-/* Couleurs des icônes */
 .engineering-icon {
     color: #007bff;
 }
 
-/* Exemple : bleu */
 .programming-icon {
     color: #28a745;
 }
 
-/* Exemple : vert */
+
 .language-icon {
     color: #ffc107;
 }
 
-/* Exemple : jaune */
 .science-icon {
     color: #dc3545;
 }
 
-/* Exemple : rouge */
 .history-icon {
     color: #17a2b8;
 }
 
-/* Exemple : cyan */
 .psychology-icon {
     color: #fd7e14;
 }
 
-/* Exemple : orange */
 .web-design-icon {
     color: #6f42c1;
 }
-
-/* Exemple : violet */
 .see-all-icon {
     color: #000000;
 }
 
-/* Exemple : noir */
 .profils {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .profils img:nth-child(2) {
     width: 200px; 
@@ -512,20 +555,27 @@
     position: absolute;
     width: 1134px;
     height: 77px;
-    left: 20%;
+    left: 20.5%;
     top: 3120px;
     margin-bottom: 20px;
+    margin-top: 500px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
+    padding-top: 180px;
 }
 .details p:first-child{
-    font-weight: bold;
-    font-size: 20px;
+    font-weight:800;
+    font-size: 25px;
 }
 .details p:last-child{
     font-size: 15px;
+}
+.footer{
+    height: 50px;
+    background-color: #0508be ;
+    margin-top: 200px;
 }
