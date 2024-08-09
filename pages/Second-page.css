@@ -1,4 +1,7 @@
-/* Styles for the navigation bar */
+.before-nav{
+    height:80px;
+    background-color: #cde0f5;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -411,7 +414,7 @@
 .after-card .button {
     display: inline-block;
     color: #000000;
-    background-color: rgb(255, 234, 0);
+    background-color: rgb(255, 196, 0);
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
@@ -556,7 +559,7 @@
     width: 1134px;
     height: 77px;
     left: 20.5%;
-    top: 3120px;
+    top: 3380px;
     margin-bottom: 20px;
     margin-top: 500px;
     font-family: 'Inter';
@@ -565,7 +568,7 @@
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-    padding-top: 180px;
+    
 }
 .details p:first-child{
     font-weight:800;
